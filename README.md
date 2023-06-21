@@ -12,4 +12,8 @@ Generates a list of all devices showing every component with a serial number
 
 > python3 main.py
 
+Script will prompt the user for the vManage address and a username and password (hidden).
+
+Enter the vManage address as a domain name or IP address.  The script will use port 443 by default to specify a different port, use the format:
+> address:port
 
