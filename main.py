@@ -35,19 +35,8 @@ for device in devices['data']:
             print(sn_list)
         except Exception as e:
             print(f'{e}\n{device}')
-    # else:
-    #     devices['data'].remove(device)
 
 vmanage.logout()
-
-# for device in devices['data']:
-#     for item in all_headers:
-#         if item not in device:
-#             device[item] = ''
-#     final_list.append(device)
-
-print(all_headers)
-print(final_list)
 
 with open('output.csv', 'w') as file:
     csv_output = csv.DictWriter(file, all_headers)
